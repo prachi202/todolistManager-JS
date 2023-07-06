@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c91dafdb6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="cmp-todolistManager">
+            <section class="cmp-todolistManager__heading">
+                <p class="cmp-todolistManager__heading--title">Todo List Manager</p>
+                <p class="cmp-todolistManager__heading--subtitle">Manage and Search your pending task on click!</p>
+            </section>
+            <section class="cmp-todolistManager__taskManager">
+                <div class="cmp-todolistManager__taskManager__searchBox">
+                    <form class="cmp-todolistManager__taskManager__searchBox__search">
+                        <input class="cmp-todolistManager__taskManager__searchBox__search--searchInput" type="text" name="task" placeholder="search task" autocomplete="off">
+                        <i class="fa-sharp fa-regular fa-circle-xmark cmp-todolistManager__taskManager__searchBox__search--reset"></i>
+                    </form>
+                </div>
+                <div class="cmp-todolistManager__taskManager__taskBox">
+                    <ul class="cmp-todolistManager__taskManager__taskBox__tasks">
+                        <li class="cmp-todolistManager__taskManager__taskBox__tasks--list">
+                            <span>Java</span>
+                            <i class="fa-solid fa-trash-can cmp-todolistManager__taskManager__taskBox__tasks--list--delete"></i>
+                        </li>
+                        <li class="cmp-todolistManager__taskManager__taskBox__tasks--list">
+                            <span>JavaScript</span>
+                            <i class="fa-solid fa-trash-can cmp-todolistManager__taskManager__taskBox__tasks--list--delete"></i>
+                        </li>
+                        <li class="cmp-todolistManager__taskManager__taskBox__tasks--list">
+                            <span>HTML</span>
+                            <i class="fa-solid fa-trash-can cmp-todolistManager__taskManager__taskBox__tasks--list--delete"></i>
+                        </li>
+                    </ul>
+                    <form class="cmp-todolistManager__taskManager__taskBox__addTask">
+                        <input class="cmp-todolistManager__taskManager__taskBox__addTask--addInput" type="text" name="task" placeholder="add task" autocomplete="off">
+                        <input class="cmp-todolistManager__taskManager__taskBox__addTask--submit"type="submit" value="Add">
+                    </form>
+                </div>                
+                <div class="cmp-todolistManager__taskManager__messageBox">
+                    <span class="cmp-todolistManager__taskManager__messageBox--span"></span>
+                    <button class="cmp-todolistManager__taskManager__messageBox--clear">Clear All</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
